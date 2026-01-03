@@ -77,18 +77,30 @@ fun main(){
     println(res2)
 
     // ====================== Escribir en consola ===================================
+    val resultadoSuma: Double
+    var n1 : Double
+    var n2 : Double
 
-    try {
-        println("Escribe el primer valor: ")
-        val n1 = readln().toInt()
+    while (true){
+        try {
+            println("Escribe el primer valor: ")
+            n1 = readln().toDouble()
 
-        println("Escribe el segundo valor: ")
-        val n2 = readln().toInt()
+            println("Escribe el segundo valor: ")
+            n2 = readln().toDouble()
+            break
+        } catch (e: NumberFormatException) {
+            println("Error : escribe un número válido $e")
+        }
+    }
 
-        val resultadoSuma = n1 + n2
-        println(resultadoSuma)
-    } catch (e: NumberFormatException) {
-        println("Error : escribe un número válido $e")
+    resultadoSuma = n1 + n2
+    println(resultadoSuma)
+
+    var num = 1
+    while (num <= 10) {
+        println("El valor de num es: $num")
+        num++
     }
 
 }
