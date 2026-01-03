@@ -75,4 +75,15 @@ fun main(){
     val array = arrayOf("Hola", "Mundo")
     val res2 = array.joinToString(" ")
     println(res2)
+
+    // ====================== Escribir en consola ===================================
+
+    println("Escribe el primer valor: ")
+    val n1 = readln().toInt()
+
+    println("Escribe el segundo valor: ")
+    val n2 = readln().toInt()
+
+    val resultadoSuma = n1 + n2
+    println(resultadoSuma)
 }
