@@ -52,4 +52,27 @@ fun main(){
         println("Valor id: $it")
     }
 
+    // ===================== CAMBIO TIPO DE DATOS Y CONCATENACIONES ===========================
+    // cuando quiero que sea de un tipo de datos y despues cambiarlo de tipo de datos
+
+    val num1 = 5
+    // Puede venir otro tipo de dato desde una base de datos
+    val num2 = "10"
+    // De esta manera puedo convertir desde un string a al revés
+    val res = num1 + num2.toInt()
+    println(res)
+
+    val t1 = "Hola"
+    val t2 = "Mundo"
+    // De esta manera puedo concatenar unas variables
+    val texto = "$t1 $t2"
+    println(texto)
+
+    // La funcion de plus me permite concatenar
+    val resultado = t1.plus(" ".plus(t2))
+    println(resultado)
+
+    val array = arrayOf("Hola", "Mundo")
+    val res2 = array.joinToString(" ")
+    println(res2)
 }
