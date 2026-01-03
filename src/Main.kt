@@ -27,4 +27,11 @@ fun main(){
     var texto2 = "Mundo"
     println(texto1 +  texto2)
 
+    // ========================= CONSTANTES =====================================
+    // Una constante siempre van a tener un mismo valor, en vez de generar var uno tendría que ponder val, la diferencia
+    // entre estos dos tipos es que var utiliza menos memoria a diferencia de val, es como una mochila que puede
+    // almacenar muchas cosas diferentes, sin embargo, la constante va a tener un empaque mucho más óptimo.
+    val pi = 3.14
+
+    // Siempre utilizar constantes si sabemos que el valor no cambiará
 }
