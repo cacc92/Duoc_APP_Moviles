@@ -105,6 +105,7 @@ fun main(){
 
     // =================== Arrays, listas For ======================
     var array = arrayOf("César", "Carrasco", 2, 2.5, true)
+    // Para poder mostrar todos los elementos elementos los debo transformar a string con la función content
     println(array.contentToString())
 
     var numeros = intArrayOf(1,2,3,4,5)
@@ -120,7 +121,9 @@ fun main(){
     array += "Sergio"
     println(array.contentToString())
 
+    // De esta forma puedo generar un Array de solamente enteros
     var nums = intArrayOf(4,3,6,8,9,1)
+    // Con sort puedo ordenar el array generado
     nums.sort()
     println(nums.contentToString())
 
@@ -128,6 +131,9 @@ fun main(){
     numbers.sort()
     println(numbers.contentToString())
 
+    // De esta manera podría agrupar por elementos unicos, esto me va generar como una lista de lista con cada elemento
+    // para posteriormente mostrar solamente los elementos que tienen un largo mayor a uno que serian solamente los
+    // elementos que se encuentran duplicados. Todo eso se hace con el filter
     var duplicate = numbers.groupBy { it }.filter { it.value.size > 1 }.keys
     duplicate.sorted()
     println(duplicate)
